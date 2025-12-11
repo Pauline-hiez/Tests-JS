@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="reader-container">
+  <div class="controls">
+    <div class="control-group">
+      <label for="brightness">Brightness</label>
+      <input type="range" id="brightness" class="slider" min="0.4" max="1" step="0.1" value="1">
+    </div>
+    <div class="control-group">
+      <label for="font-size">Font Size</label>
+      <input type="range" id="font-size" class="slider" min="14" max="22" step="1" value="16">
+    </div>
+  </div>
+
+  <div class="book-container" id="bookContainer">
+    <div class="page-indicator" id="pageIndicator">Page 1-2</div>
+    <div class="binding-gutter"></div>
+
+    <div class="book" id="book">
+      <div class="book-spread" id="currentSpread">
+        <div class="page-left">
+          <div class="page-content" id="leftPageContent"></div>
+          <div class="page-number" id="leftPageNumber">1</div>
+        </div>
+        <div class="page-right">
+          <div class="page-content" id="rightPageContent"></div>
+          <div class="page-number" id="rightPageNumber">2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="click-areas">
+      <div class="click-area" id="prevArea"></div>
+      <div class="click-area" id="nextArea"></div>
+    </div>
+  </div>
+
+  <div class="measurement-container" id="measurementContainer"></div>
+</div>
+
+
+<script src="./script.js"></script>
+    
+</body>
+</html>
