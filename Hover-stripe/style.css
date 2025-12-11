@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quantico", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 3);
+}
+
+.holder {
+    width: 90%;
+}
+
+svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+path {
+    fill: transparent;
+    stroke: rgb(0, 0, 3);
+    stroke-width: 2;
+}
+
+text {
+    fill: white;
+    font-size: 35px;
+}
+
+a {
+    background: rgb(16, 121, 169);
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    padding: .5em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
